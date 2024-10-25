@@ -10,8 +10,12 @@ namespace PIDCofApp
 
 		public Form1()
 		{
+			this.Size = new Size(1000, 500);
+
 			zgc = new ZedGraphControl();
-			zgc.Dock = DockStyle.Fill;
+			zgc.Location = new Point(12, 12);
+			zgc.Size = new Size(832, 436);
+
 			Controls.Add(zgc);
 
 			pane = zgc.GraphPane;
@@ -20,6 +24,8 @@ namespace PIDCofApp
 			drawSin();
 
 			zgc.AxisChange();
+
+			InitializeComponent();
 		}
 
 		private void createGraph()

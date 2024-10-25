@@ -28,82 +28,84 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			textBoxA = new TextBox();
-			textBoxB = new TextBox();
-			textBoxC = new TextBox();
-			label1 = new Label();
-			label2 = new Label();
-			label3 = new Label();
-			mainPanel = new Panel();
+			textBoxP = new TextBox();
+			textBoxI = new TextBox();
+			textBoxD = new TextBox();
+			labelP = new Label();
+			labelI = new Label();
+			labelD = new Label();
+			drawButton = new Button();
 			SuspendLayout();
 			// 
-			// textBoxA
+			// textBoxP
 			// 
-			textBoxA.Location = new Point(370, 10);
-			textBoxA.Name = "textBoxA";
-			textBoxA.Size = new Size(100, 23);
-			textBoxA.TabIndex = 1;
+			textBoxP.Location = new Point(872, 12);
+			textBoxP.Name = "textBoxP";
+			textBoxP.Size = new Size(100, 23);
+			textBoxP.TabIndex = 1;
 			// 
-			// textBoxB
+			// textBoxI
 			// 
-			textBoxB.Location = new Point(370, 40);
-			textBoxB.Name = "textBoxB";
-			textBoxB.Size = new Size(100, 23);
-			textBoxB.TabIndex = 2;
+			textBoxI.Location = new Point(872, 41);
+			textBoxI.Name = "textBoxI";
+			textBoxI.Size = new Size(100, 23);
+			textBoxI.TabIndex = 2;
 			// 
-			// textBoxC
+			// textBoxD
 			// 
-			textBoxC.Location = new Point(370, 70);
-			textBoxC.Name = "textBoxC";
-			textBoxC.Size = new Size(100, 23);
-			textBoxC.TabIndex = 3;
+			textBoxD.Location = new Point(872, 70);
+			textBoxD.Name = "textBoxD";
+			textBoxD.Size = new Size(100, 23);
+			textBoxD.TabIndex = 3;
 			// 
-			// label1
+			// labelP
 			// 
-			label1.AutoSize = true;
-			label1.Location = new Point(350, 10);
-			label1.Name = "label1";
-			label1.Size = new Size(16, 15);
-			label1.TabIndex = 4;
-			label1.Text = "a:";
+			labelP.AutoSize = true;
+			labelP.Location = new Point(850, 15);
+			labelP.Name = "labelP";
+			labelP.Size = new Size(20, 15);
+			labelP.TabIndex = 4;
+			labelP.Text = "P :";
 			// 
-			// label2
+			// labelI
 			// 
-			label2.AutoSize = true;
-			label2.Location = new Point(350, 40);
-			label2.Name = "label2";
-			label2.Size = new Size(17, 15);
-			label2.TabIndex = 5;
-			label2.Text = "b:";
+			labelI.AutoSize = true;
+			labelI.Location = new Point(850, 44);
+			labelI.Name = "labelI";
+			labelI.Size = new Size(16, 15);
+			labelI.TabIndex = 5;
+			labelI.Text = "I :";
 			// 
-			// label3
+			// labelD
 			// 
-			label3.AutoSize = true;
-			label3.Location = new Point(350, 70);
-			label3.Name = "label3";
-			label3.Size = new Size(16, 15);
-			label3.TabIndex = 6;
-			label3.Text = "c:";
+			labelD.AutoSize = true;
+			labelD.Location = new Point(850, 73);
+			labelD.Name = "labelD";
+			labelD.Size = new Size(21, 15);
+			labelD.TabIndex = 6;
+			labelD.Text = "D :";
 			// 
-			// mainPanel
+			// drawButton
 			// 
-			mainPanel.Location = new Point(12, 12);
-			mainPanel.Name = "mainPanel";
-			mainPanel.Size = new Size(332, 228);
-			mainPanel.TabIndex = 7;
+			drawButton.Location = new Point(872, 397);
+			drawButton.Name = "drawButton";
+			drawButton.Size = new Size(100, 52);
+			drawButton.TabIndex = 7;
+			drawButton.Text = "Draw";
+			drawButton.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(484, 261);
-			Controls.Add(mainPanel);
-			Controls.Add(label3);
-			Controls.Add(label2);
-			Controls.Add(label1);
-			Controls.Add(textBoxC);
-			Controls.Add(textBoxB);
-			Controls.Add(textBoxA);
+			ClientSize = new Size(984, 461);
+			Controls.Add(drawButton);
+			Controls.Add(labelD);
+			Controls.Add(labelI);
+			Controls.Add(labelP);
+			Controls.Add(textBoxD);
+			Controls.Add(textBoxI);
+			Controls.Add(textBoxP);
 			Name = "Form1";
 			Text = "Form1";
 			ResumeLayout(false);
@@ -111,12 +113,12 @@
 		}
 
 		#endregion
-		private TextBox textBoxA;
-		private TextBox textBoxB;
-		private TextBox textBoxC;
-		private Label label1;
-		private Label label2;
-		private Label label3;
-		private Panel mainPanel;
+		private TextBox textBoxP;
+		private TextBox textBoxI;
+		private TextBox textBoxD;
+		private Label labelP;
+		private Label labelI;
+		private Label labelD;
+		private Button drawButton;
 	}
 }
