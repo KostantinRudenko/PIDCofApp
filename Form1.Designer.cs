@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			button1 = new Button();
 			textBoxA = new TextBox();
 			textBoxB = new TextBox();
 			textBoxC = new TextBox();
@@ -37,16 +36,6 @@
 			label3 = new Label();
 			mainPanel = new Panel();
 			SuspendLayout();
-			// 
-			// button1
-			// 
-			button1.Location = new Point(397, 224);
-			button1.Name = "button1";
-			button1.Size = new Size(75, 25);
-			button1.TabIndex = 0;
-			button1.Text = "Paint";
-			button1.UseVisualStyleBackColor = true;
-			button1.Click += button1_Click;
 			// 
 			// textBoxA
 			// 
@@ -102,7 +91,6 @@
 			mainPanel.Name = "mainPanel";
 			mainPanel.Size = new Size(332, 228);
 			mainPanel.TabIndex = 7;
-			mainPanel.Paint += mainPanel_Paint;
 			// 
 			// Form1
 			// 
@@ -116,7 +104,6 @@
 			Controls.Add(textBoxC);
 			Controls.Add(textBoxB);
 			Controls.Add(textBoxA);
-			Controls.Add(button1);
 			Name = "Form1";
 			Text = "Form1";
 			ResumeLayout(false);
@@ -124,8 +111,6 @@
 		}
 
 		#endregion
-
-		private Button button1;
 		private TextBox textBoxA;
 		private TextBox textBoxB;
 		private TextBox textBoxC;
